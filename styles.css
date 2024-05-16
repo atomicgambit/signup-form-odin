@@ -299,13 +299,19 @@ img {
 
 /* My own css starts here */
 
+:root {
+  font-family: monospace;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: #f8f9fa;
 }
 
-.helldiver-form h1 {
+h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -323,6 +329,15 @@ body {
   flex-direction: column;
 }
 
+.helldiver-img {
+  height: 100%;
+  max-height: 900px;
+  width: auto;
+
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
 /* .helldiver-form {
   width: 80%;
   margin: auto;
@@ -336,6 +351,10 @@ body {
 
 @media only screen and (min-width: 700px) {
   body {
+    flex-direction: row;
+  }
+  .helldiver-form {
+    display: flex;
     flex-direction: row;
   }
 }
