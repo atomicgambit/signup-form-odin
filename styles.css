@@ -319,8 +319,9 @@ h1 {
 
 .helldiver-form {
   text-align: left;
-  margin: auto;
   padding: 1rem;
+  /* display: inline-block; */
+  /* width: 100%; */
 }
 
 .form-row {
@@ -328,6 +329,18 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.form-row label {
+  margin-bottom: 0.25rem;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+  background-color: #fff4e6;
+  width: 80%;
 }
 
 .helldiver-img {
@@ -366,9 +379,24 @@ h1 {
 @media only screen and (min-width: 700px) {
   body {
     flex-direction: row;
+    /* justify-content: space-around; */
   }
+  main {
+    display: inline-block;
+    flex-grow: 2;
+  }
+
   .form-input {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 20rem;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row input[type="tel"],
+  .form-row input[type="password"] {
+    width: 200%;
   }
 }
