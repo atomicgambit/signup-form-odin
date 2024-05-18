@@ -384,6 +384,9 @@ h1 {
   main {
     display: inline-block;
     flex-grow: 2;
+
+    border: solid 2px black;
+    border-radius: 2px;
   }
 
   .form-input {
