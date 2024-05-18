@@ -379,6 +379,9 @@ h1 {
 @media only screen and (min-width: 700px) {
   body {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     /* justify-content: space-around; */
   }
   main {
@@ -386,7 +389,7 @@ h1 {
     flex-grow: 2;
 
     border: solid 2px black;
-    border-radius: 2px;
+    border-radius: px;
   }
 
   .form-input {
